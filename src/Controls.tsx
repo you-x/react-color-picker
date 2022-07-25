@@ -48,7 +48,7 @@ export const Controls: React.FC<Props> = ({
 
   return (
     <div style={{ paddingTop: 12, paddingBottom: 9 }}>
-      <div className="df jsb ac" style={{ width: "100%" }}>
+      <div className="df jsb ac">
         <div
           className="df jc ac"
           style={{

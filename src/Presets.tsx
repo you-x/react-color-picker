@@ -17,7 +17,7 @@ export const Presets: React.FC<Props> = ({ presets = [] }) => {
   };
 
   return (
-    <div style={{ display: "flex", marginTop: 14 }}>
+    <div style={{ display: "flex", marginTop: 14, width: "294px" }}>
       <div
         style={{
           width: 50,

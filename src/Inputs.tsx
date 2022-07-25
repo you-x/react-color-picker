@@ -30,6 +30,7 @@ export const Inputs = () => {
   return (
     <div
       style={{
+        width: "294px",
         display: "flex",
         justifyContent: "space-between",
         paddingTop: 14,

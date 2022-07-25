@@ -32,7 +32,7 @@ export const Picker: React.FC<Props> = ({
   const { isGradient } = usePicker();
 
   return (
-    <div style={{ userSelect: "none" }}>
+    <div style={{ userSelect: "none", width: "294px" }}>
       <Square />
       {!hideControls && (
         <Controls

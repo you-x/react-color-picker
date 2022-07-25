@@ -37,6 +37,7 @@ export const Opacity: React.FC = () => {
       <div className="bar-wrap-inner" onMouseUp={stopDragging}>
         <div
           className="c-resize ps-rl"
+          style={{ width: "294px" }}
           onMouseDown={handleDown}
           onMouseMove={handleMove}
         >

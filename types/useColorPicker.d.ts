@@ -1,0 +1,31 @@
+export declare const useColorPicker: (value: string, onChange: React.Dispatch<React.SetStateAction<string>>) => {
+    setLinear: () => void;
+    setRadial: () => void;
+    setDegrees: (newDegrees: number) => void;
+    setSolid: (startingColor: string) => void;
+    setGradient: (startingGradiant: string) => void;
+    setR: (newR: number) => void;
+    setG: (newG: number) => void;
+    setB: (newB: number) => void;
+    setA: (newA: number) => void;
+    setHue: (newHue: number) => void;
+    setSaturation: (newSat: number) => void;
+    setLightness: (newLight: number) => void;
+    valueToHSL: () => string;
+    valueToHSV: () => string;
+    valueToHex: () => string;
+    valueToCmyk: () => string;
+    setSelectedPoint: (index: number) => void;
+    addPoint: (left: number) => void;
+    deletePoint: (index: number) => void;
+    selectedPoint: number;
+    isGradient: boolean;
+    gradientType: string;
+    degrees: number;
+    setPointLeft: (left: number) => void;
+    currentLeft: number;
+    rgbaArr: number[];
+    hslArr: number[];
+    previousColors: string[];
+};
+//# sourceMappingURL=useColorPicker.d.ts.map

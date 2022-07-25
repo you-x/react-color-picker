@@ -17,13 +17,5 @@ export default {
 export const Primary = () => {
   const [color, setColor] = useState("rgba(255,255,255,1)");
 
-  return (
-    <div
-      style={{
-        width: "500px",
-      }}
-    >
-      <ColorPicker value={color} onChange={setColor} />
-    </div>
-  );
+  return <ColorPicker value={color} onChange={setColor} />;
 };

@@ -2,20 +2,23 @@ import { defineConfig } from "vite";
 import path from "path";
 import react from "@vitejs/plugin-react";
 
+import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
+
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), cssInjectedByJsPlugin()],
   build: {
     lib: {
       entry: path.resolve(__dirname, "src/index.tsx"),
       name: "react-color-picker",
-      fileName: (format) => `react-color-picker.${format}.js`,
     },
     rollupOptions: {
-      external: ["react"],
+      external: ["react", "react-dom"],
       output: {
         globals: {
-          react: "react",
+          react: "React",
+          "react-dom": "ReactDOM",
+          "styled-components": "styled",
         },
       },
     },
